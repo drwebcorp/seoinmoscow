@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects (_redirects)
+# Для одностраничного лендинга можно оставить пустым.
+# Если нужен www → apex или редиректы старых URL, добавьте правила ниже.
+#
+# Пример: редирект www на apex (работает, только если оба домена обслуживаются)
+# https://www.your-domain.pages.dev/* https://your-domain.pages.dev/:splat 301
