@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о SEO-продвижении сайтов в Москве | SEO продвижение сайтов</title>
+    <meta name="description" content="Блог о SEO-продвижении сайтов в Москве: статьи о бюджетах, методах продвижения, этапах работ и выборе подрядчика для бизнеса в 2026 году.">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Блог о SEO-продвижении сайтов в Москве">
+    <meta property="og:description" content="Статьи об SEO-продвижении в Москве: бюджеты, методы, этапы работ и выбор подрядчика.">
+    <meta property="og:image" content="https://moskva-seo-prodvizhenie.ru/images/og-image.png">
+    <meta property="og:url" content="https://moskva-seo-prodvizhenie.ru/blog/">
+    <link rel="canonical" href="https://moskva-seo-prodvizhenie.ru/blog/">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Блог о SEO-продвижении сайтов в Москве",
+        "url": "https://moskva-seo-prodvizhenie.ru/blog/",
+        "description": "Статьи о SEO-продвижении сайтов в Москве.",
+        "inLanguage": "ru"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #0e1420;
+            --bg-card: #161e2e;
+            --bg-input: #1d2738;
+            --accent: #2f6bff;
+            --text-main: #ffffff;
+            --text-muted: #a7b1c2;
+            --border: #2a3648;
+            --radius: 12px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: var(--accent); text-decoration: none; }
+        .container { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 24px; }
+        .container--wide { max-width: 1200px; }
+        :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+        .skip-link { position: absolute; left: -9999px; top: 0; }
+        .skip-link:focus { left: 16px; top: 16px; background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 8px; z-index: 200; }
+
+        /* === Header === */
+        .header { border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(14, 20, 32, 0.95); backdrop-filter: blur(6px); z-index: 50; }
+        .header-block { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 0; flex-wrap: wrap; }
+        .header-block__logo a { color: var(--text-main); font-size: 18px; font-weight: 700; line-height: 1.3; }
+        .header-block__act { display: flex; align-items: center; gap: 20px; }
+        .header-block__info { color: var(--text-muted); font-size: 14px; text-align: right; }
+        .header-block__info span { display: block; }
+        .header-email { font-size: 15px; }
+
+        /* === Nav === */
+        .header-nav { display: flex; align-items: center; gap: 18px; }
+        .header-nav a { color: var(--text-muted); font-size: 15px; font-weight: 500; padding: 6px 2px; transition: color 0.2s; }
+        .header-nav a:hover { color: var(--text-main); }
+        .header-nav a.is-active { color: var(--text-main); border-bottom: 2px solid var(--accent); }
+
+        /* === Blog layout === */
+        .blog { padding: 48px 0 64px; }
+        .blog-width { max-width: 960px; }
+        .blog h1 { font-size: 38px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+        .blog .lead { font-size: 18px; color: var(--text-muted); line-height: 1.7; margin-bottom: 36px; }
+
+        /* === Posts grid / card === */
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 28px; }
+        .post-card {
+            display: block;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.2s, border-color 0.2s, background 0.2s;
+        }
+        .post-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .post-card__inner { display: flex; flex-direction: column; gap: 12px; height: 100%; }
+        .post-card__title { font-size: 19px; font-weight: 600; line-height: 1.35; color: var(--text-main); }
+        .post-card:hover .post-card__title { color: var(--accent); }
+        .post-card__excerpt { font-size: 15px; color: var(--text-muted); flex-grow: 1; }
+        .post-card__meta { font-size: 13px; color: var(--text-muted); }
+        .post-card__more { font-size: 15px; font-weight: 500; color: var(--accent); }
+        .posts-empty { color: var(--text-muted); font-size: 16px; }
+
+        /* === Callout block === */
+        .callout { background: rgba(47, 107, 255, 0.12); border-left: 4px solid var(--accent); border-radius: 4px; padding: 16px 20px; margin: 24px 0; }
+        .callout p { margin-bottom: 0; }
+
+        /* === Footer === */
+        .footer { border-top: 1px solid var(--border); padding: 32px 0; }
+        .footer-block { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color: var(--text-muted); font-size: 14px; }
+        .footer-block .footer-links a { display: block; margin-bottom: 6px; }
+        .copyright { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 20px; }
+
+        /* === Responsive === */
+        @media (max-width: 900px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) {
+            .posts-grid { grid-template-columns: 1fr; }
+            .blog h1 { font-size: 28px; }
+            .header-block__info { display: none; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { transition: none !important; }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#article">Перейти к содержимому</a>
+
+    <header class="header">
+        <div class="container container--wide">
+            <div class="header-block">
+                <div class="header-block__logo">
+                    <a href="../index.html">SEO продвижение сайтов</a>
+                </div>
+                <div class="header-block__info">
+                    <span>пн-вс: 9.00 – 21.00</span>
+                </div>
+                <div class="header-block__act">
+                    <nav class="header-nav" aria-label="Основная навигация">
+                        <a href="../index.html">SEO-продвижение</a>
+                        <a href="index.html" class="is-active" aria-current="page">Блог</a>
+                    </nav>
+                    <a href="mailto:info@moskva-seo-prodvizhenie.ru" class="header-email">info@moskva-seo-prodvizhenie.ru</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="blog" id="article">
+            <div class="container blog-width">
+                <h1>Блог об SEO-продвижении сайтов</h1>
+                <p class="lead">Разбираем бюджеты, методы и этапы продвижения сайтов в Москве. Каждая статья — практический разбор с цифрами, без воды.</p>
+
+                <div class="posts-grid" data-posts-grid data-limit="9" data-json-base="../js/posts.json"></div>
+
+                <div class="callout">
+                    <p>Новые статьи появляются по мере готовности. Если вам интересна конкретная тема — напишите на <a href="mailto:info@moskva-seo-prodvizhenie.ru">info@moskva-seo-prodvizhenie.ru</a>, и мы разберём её в следующем материале.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--wide">
+            <div class="footer-block">
+                <div>SEO продвижение сайтов</div>
+                <div class="footer-links">
+                    <a href="../policy.html">Политика конфиденциальности</a>
+                    <a href="../consent.html">Согласие на обработку данных</a>
+                </div>
+                <div>
+                    <span>пн-вс: 9.00 – 21.00</span><br>
+                    <a href="mailto:info@moskva-seo-prodvizhenie.ru">info@moskva-seo-prodvizhenie.ru</a>
+                </div>
+            </div>
+            <div class="copyright">© <span id="year"></span> SEO продвижение сайтов. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="../js/posts-loader.js" defer></script>
+</body>
+
+</html>
