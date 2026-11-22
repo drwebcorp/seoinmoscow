@@ -5,30 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Блог о SEO-продвижении сайтов в Москве | SEO продвижение сайтов</title>
-    <meta name="description" content="Блог о SEO-продвижении сайтов в Москве: статьи о бюджетах, методах продвижения, этапах работ и выборе подрядчика для бизнеса в 2026 году.">
+    <title>SEO-продвижение сайтов в Москве: полное руководство для бизнеса в 2026 году</title>
+    <meta name="description" content="Сколько стоит SEO в Москве, из чего складывается бюджет, какие модели продвижения работают и как выбрать подрядчика. Реальные цифры, этапы работ и чек-лист для бизнеса в 2026 году.">
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Блог о SEO-продвижении сайтов в Москве">
-    <meta property="og:description" content="Статьи об SEO-продвижении в Москве: бюджеты, методы, этапы работ и выбор подрядчика.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SEO-продвижение сайтов в Москве: полное руководство для бизнеса в 2026 году">
+    <meta property="og:description" content="Стоимость SEO в Москве, модели продвижения, этапы работ и чек-лист выбора подрядчика. Реальные цифры рынка 2026 года.">
     <meta property="og:image" content="https://moskva-seo-prodvizhenie.ru/images/og-image.png">
-    <meta property="og:url" content="https://moskva-seo-prodvizhenie.ru/blog/">
-    <link rel="canonical" href="https://moskva-seo-prodvizhenie.ru/blog/">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta property="og:url" content="https://moskva-seo-prodvizhenie.ru/">
+    <link rel="canonical" href="https://moskva-seo-prodvizhenie.ru/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Блог о SEO-продвижении сайтов в Москве",
-        "url": "https://moskva-seo-prodvizhenie.ru/blog/",
-        "description": "Статьи о SEO-продвижении сайтов в Москве.",
-        "inLanguage": "ru"
-    }
-    </script>
 
     <style>
         :root {
@@ -74,36 +63,53 @@
         .header-nav a:hover { color: var(--text-main); }
         .header-nav a.is-active { color: var(--text-main); border-bottom: 2px solid var(--accent); }
 
-        /* === Blog layout === */
-        .blog { padding: 48px 0 64px; }
-        .blog-width { max-width: 960px; }
-        .blog h1 { font-size: 38px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .blog .lead { font-size: 18px; color: var(--text-muted); line-height: 1.7; margin-bottom: 36px; }
+        /* === Article === */
+        .article { padding: 48px 0 64px; }
+        .article-width { max-width: 760px; }
+        .article h1 { font-size: 40px; font-weight: 700; line-height: 1.2; margin-bottom: 20px; }
+        .article .lead { font-size: 19px; color: var(--text-muted); line-height: 1.7; margin-bottom: 36px; }
+        .article h2 { font-size: 28px; font-weight: 700; line-height: 1.3; margin: 48px 0 16px; padding-top: 8px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+        .article h3 { font-size: 21px; font-weight: 600; margin: 28px 0 12px; line-height: 1.4; }
+        .article p { margin-bottom: 20px; font-size: 16px; }
+        .article strong { color: #fff; }
 
-        /* === Posts grid / card === */
-        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 28px; }
-        .post-card {
-            display: block;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 24px;
-            text-decoration: none;
-            color: var(--text-main);
-            transition: transform 0.2s, border-color 0.2s, background 0.2s;
-        }
-        .post-card:hover { transform: translateY(-3px); border-color: var(--accent); }
-        .post-card__inner { display: flex; flex-direction: column; gap: 12px; height: 100%; }
-        .post-card__title { font-size: 19px; font-weight: 600; line-height: 1.35; color: var(--text-main); }
-        .post-card:hover .post-card__title { color: var(--accent); }
-        .post-card__excerpt { font-size: 15px; color: var(--text-muted); flex-grow: 1; }
-        .post-card__meta { font-size: 13px; color: var(--text-muted); }
-        .post-card__more { font-size: 15px; font-weight: 500; color: var(--accent); }
-        .posts-empty { color: var(--text-muted); font-size: 16px; }
+        /* === TOC === */
+        .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 40px; }
+        .toc h2 { font-size: 20px; border: none; margin: 0 0 12px; padding: 0; }
+        .toc ol { padding-left: 20px; display: grid; gap: 8px; }
+        .toc a { font-size: 15px; }
+
+        /* === Lists === */
+        .article ul { margin: 0 0 20px; padding-left: 24px; display: grid; gap: 10px; }
+        .article li { font-size: 16px; }
+        .article li::marker { color: var(--accent); }
+
+        /* === Table === */
+        .table-wrap { overflow-x: auto; margin: 24px 0 28px; border: 1px solid var(--border); border-radius: var(--radius); }
+        table { width: 100%; border-collapse: collapse; background: var(--bg-card); min-width: 560px; }
+        th, td { padding: 14px 16px; text-align: left; font-size: 15px; }
+        thead th { background: var(--bg-input); color: #fff; font-weight: 600; border-bottom: 1px solid var(--border); }
+        tbody td { border-bottom: 1px solid var(--border); color: var(--text-muted); }
+        tbody tr:last-child td { border-bottom: none; }
+        tbody td:first-child { font-weight: 500; color: var(--text-main); }
+
+        /* === FAQ / callout === */
+        .faq { margin-bottom: 24px; }
+        .faq details { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 12px; }
+        .faq summary { font-size: 17px; font-weight: 600; cursor: pointer; color: #fff; }
+        .faq details[open] summary { margin-bottom: 12px; }
+        .faq details p { margin-bottom: 0; }
 
         /* === Callout block === */
         .callout { background: rgba(47, 107, 255, 0.12); border-left: 4px solid var(--accent); border-radius: 4px; padding: 16px 20px; margin: 24px 0; }
         .callout p { margin-bottom: 0; }
+
+        /* === CTA (email only, no form) === */
+        .cta-email { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); text-align: center; padding: 40px 28px; margin: 48px 0; }
+        .cta-email h2 { border: none; font-size: 24px; margin: 0 0 12px; padding: 0; }
+        .cta-email p { color: var(--text-muted); margin-bottom: 20px; }
+        .cta-email a.btn { display: inline-block; background: var(--accent); color: #fff; border-radius: var(--radius); padding: 14px 30px; font-size: 16px; font-weight: 500; transition: background 0.2s; }
+        .cta-email a.btn:hover { background: #2054d8; }
 
         /* === Footer === */
         .footer { border-top: 1px solid var(--border); padding: 32px 0; }
@@ -112,10 +118,10 @@
         .copyright { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 20px; }
 
         /* === Responsive === */
-        @media (max-width: 900px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 640px) {
-            .posts-grid { grid-template-columns: 1fr; }
-            .blog h1 { font-size: 28px; }
+        @media (max-width: 767px) {
+            .article h1 { font-size: 28px; }
+            .article h2 { font-size: 22px; }
+            .article h3 { font-size: 18px; }
             .header-block__info { display: none; }
         }
         @media (prefers-reduced-motion: reduce) {
@@ -132,15 +138,15 @@
         <div class="container container--wide">
             <div class="header-block">
                 <div class="header-block__logo">
-                    <a href="../index.html">SEO продвижение сайтов</a>
+                    <a href="#">SEO продвижение сайтов</a>
                 </div>
                 <div class="header-block__info">
                     <span>пн-вс: 9.00 – 21.00</span>
                 </div>
                 <div class="header-block__act">
                     <nav class="header-nav" aria-label="Основная навигация">
-                        <a href="../index.html">SEO-продвижение</a>
-                        <a href="index.html" class="is-active" aria-current="page">Блог</a>
+                        <a href="index.html" class="is-active" aria-current="page">SEO-продвижение</a>
+                        <a href="blog/index.html">Блог</a>
                     </nav>
                     <a href="mailto:info@moskva-seo-prodvizhenie.ru" class="header-email">info@moskva-seo-prodvizhenie.ru</a>
                 </div>
@@ -149,18 +155,140 @@
     </header>
 
     <main>
-        <div class="blog" id="article">
-            <div class="container blog-width">
-                <h1>Блог об SEO-продвижении сайтов</h1>
-                <p class="lead">Разбираем бюджеты, методы и этапы продвижения сайтов в Москве. Каждая статья — практический разбор с цифрами, без воды.</p>
+        <article class="article" id="article">
+            <div class="container article-width">
+                <h1>SEO-продвижение сайтов в Москве: полное руководство для бизнеса в 2026 году</h1>
+                <p class="lead">Московский рынок SEO перенасыщен предложениями — от фрилансеров за 15 000 ₽ до агентств с бюджетами в сотни тысяч рублей. В такой среде легко ошибиться с выбором подрядчика или недооценить сложность задачи. Эта статья поможет разобраться, из чего складывается стоимость SEO в Москве, какие методы действительно работают и как выбрать формат сотрудничества под задачи вашего бизнеса.</p>
 
-                <div class="posts-grid" data-posts-grid data-limit="9" data-json-base="../js/posts.json"></div>
+                <nav class="toc" aria-label="Оглавление">
+                    <h2>Содержание</h2>
+                    <ol>
+                        <li><a href="#chto-takoe">Что такое SEO-продвижение в Москве и почему оно отличается от регионов</a></li>
+                        <li><a href="#skolko-stoit">Сколько стоит SEO-продвижение в Москве: реальные цифры 2026 года</a></li>
+                        <li><a href="#iz-chego-budzhet">Из чего складывается бюджет SEO: факторы ценообразования</a></li>
+                        <li><a href="#modeli">Модели SEO-продвижения: что выбрать</a></li>
+                        <li><a href="#etapy">Что входит в работы: этапы SEO-продвижения</a></li>
+                        <li><a href="#chek-list">Как выбрать SEO-подрядчика в Москве: чек-лист</a></li>
+                        <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                    </ol>
+                </nav>
+
+                <h2 id="chto-takoe">Что такое SEO-продвижение в Москве и почему оно отличается от регионов</h2>
+                <p>SEO-продвижение в Москве — это комплекс работ по повышению видимости сайта в Яндексе и Google по коммерческим и информационным запросам, привязанным к столичному региону. Ключевое отличие от регионального SEO — уровень конкуренции. Практически каждая ниша представлена десятками сильных игроков с развитой структурой сайтов и рекламными бюджетами.</p>
+                <p>Поисковые системы в Москве предъявляют повышенные требования к коммерческим факторам: удобству навигации, глубине проработки услуг, наличию цен, отзывов и региональной привязки. Поверхностные сайты без истории и качественного контента здесь практически не имеют шансов закрепиться в топе. Именно поэтому SEO в столице — это не разовая оптимизация, а долгосрочная инвестиция с накопительным эффектом.</p>
+
+                <h2 id="skolko-stoit">Сколько стоит SEO-продвижение в Москве: реальные цифры 2026 года</h2>
+                <p>Стоимость SEO в Москве варьируется в широком диапазоне в зависимости от ниши, состояния сайта и объёма работ. Вот ориентиры по рынку:</p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Формат работы</th>
+                                <th>Стоимость в месяц</th>
+                                <th>Для кого подходит</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Фрилансер (базовый)</td>
+                                <td>от 15 000 ₽</td>
+                                <td>Молодой сайт, низкая конкуренция</td>
+                            </tr>
+                            <tr>
+                                <td>Агентство (старт)</td>
+                                <td>от 35 000–45 000 ₽</td>
+                                <td>Локальный бизнес, один город</td>
+                            </tr>
+                            <tr>
+                                <td>Агентство (конкурентная ниша)</td>
+                                <td>от 60 000–90 000 ₽</td>
+                                <td>Медицина, юристы, e-commerce</td>
+                            </tr>
+                            <tr>
+                                <td>Комплексное SEO + реклама</td>
+                                <td>от 110 000–150 000 ₽</td>
+                                <td>Федеральные проекты, высокая конкуренция</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Конкретные примеры из практики московских агентств: SEO для стоматологической клиники обходится примерно в 40 000 ₽ в месяц с учётом работы над юзабилити и контентом. Для интернет-магазина с бюджетом 85 000 ₽ в месяц за 7 месяцев удалось увеличить заказы с 45 до 178 в месяц. Юридическая компания при бюджете 45 000 ₽ за 5 месяцев снизила стоимость заявки с 4 200 ₽ до 1 285 ₽.</p>
 
                 <div class="callout">
-                    <p>Новые статьи появляются по мере готовности. Если вам интересна конкретная тема — напишите на <a href="mailto:info@moskva-seo-prodvizhenie.ru">info@moskva-seo-prodvizhenie.ru</a>, и мы разберём её в следующем материале.</p>
+                    <p><strong>Важно понимать:</strong> если подрядчик предлагает «продвижение под ключ» за 8 000–12 000 ₽ в месяц, это почти наверняка означает либо работу по шаблону без анализа вашей ниши, либо использование рискованных методов, которые приведут к санкциям поисковых систем.</p>
                 </div>
+
+                <h2 id="iz-chego-budzhet">Из чего складывается бюджет SEO: факторы ценообразования</h2>
+                <p>Цена SEO не бывает фиксированной «для всех». На итоговую стоимость влияют четыре ключевых фактора:</p>
+                <ul>
+                    <li><strong>Конкуренция в нише.</strong> Продвижение стоматологии в Москве и продвижение интернет-магазина книг — принципиально разные бюджеты. Чем плотнее выдача, тем больше ресурсов требуется для входа в топ.</li>
+                    <li><strong>Состояние сайта.</strong> Новый сайт без истории потребует вложений в техническую базу, структуру и контент. Сайт с трёхлетней историей и накопленным ссылочным профилем стартует с более выгодных позиций.</li>
+                    <li><strong>Объём семантики.</strong> Продвижение по 50 запросам и по 2 000 запросов — это разный объём работ по кластеризации, созданию посадочных страниц и оптимизации.</li>
+                    <li><strong>География.</strong> Продвижение только по Москве дешевле, чем охват Москвы и области или нескольких регионов.</li>
+                </ul>
+                <p>Минимальный срок для выхода в топ по конкурентным запросам в Москве составляет 6–12 месяцев. Первые ощутимые результаты обычно появляются через 3–6 месяцев после начала работ.</p>
+
+                <h2 id="modeli">Модели SEO-продвижения: что выбрать</h2>
+
+                <h3>Продвижение по позициям</h3>
+                <p>Классический подход: вы платите за улучшение позиций сайта по заранее согласованному списку ключевых запросов. Преимущество — прозрачность, вы видите динамику в отчётах. Недостаток — позиции не всегда напрямую конвертируются в заявки.</p>
+
+                <h3>Продвижение по трафику</h3>
+                <p>Фокус на росте посещаемости из органики. Подходит для проектов, где важен объём аудитории (медиа, контентные сайты), а не только коммерческие заявки.</p>
+
+                <h3>Продвижение по KPI (за лиды)</h3>
+                <p>Наиболее современная и ориентированная на бизнес-результат модель. Оплата привязана к конкретным показателям: количеству заявок, стоимости лида, позициям в топе. Агентства, работающие по такой модели, обычно фиксируют KPI в договоре и несут финансовую ответственность за результат. Для московского бизнеса, где цена клика в Яндекс.Директ может достигать 500–2 000 ₽, SEO с оплатой за лид становится особенно привлекательным: стоимость привлечения клиента через органику в разы ниже.</p>
+
+                <h2 id="etapy">Что входит в работы: этапы SEO-продвижения</h2>
+                <p>Качественное SEO — это не «абонентка ни за что», а конкретные работы с измеримым эффектом. Вот типичная структура работ в московском агентстве:</p>
+                <ul>
+                    <li><strong>Месяц 1: аудит и стратегия.</strong> Технический аудит сайта, анализ конкурентов в московской выдаче, сбор семантического ядра с учётом геозависимых запросов, составление плана продвижения.</li>
+                    <li><strong>Месяцы 1–2: техническая оптимизация.</strong> Устранение ошибок индексации, ускорение загрузки, настройка структуры сайта, оптимизация мета-тегов, микроразметки и коммерческих факторов (цены, отзывы, контакты, карты).</li>
+                    <li><strong>Месяцы 2–4: контент и оптимизация страниц.</strong> Создание и оптимизация посадочных страниц под кластеры запросов, написание экспертного контента, работа с внутренней перелинковкой. Для московских сайтов услуг критически важна проработка локальных запросов и регистрация в Яндекс.Картах и 2ГИС.</li>
+                    <li><strong>Месяцы 4+: рост и удержание.</strong> Расширение семантики, работа с внешними факторами (качественные ссылки, PR-упоминания), A/B-тесты конверсии, регулярная отчётность по трафику и заявкам.</li>
+                </ul>
+
+                <h2 id="chek-list">Как выбрать SEO-подрядчика в Москве: чек-лист</h2>
+                <p>Рынок SEO в Москве непрозрачен: одни агентства обещают топ за месяц, другие предлагают «оптимизацию» за 10 000 ₽. Вот на что стоит обратить внимание при выборе:</p>
+                <ul>
+                    <li><strong>Запрашивайте кейсы с цифрами.</strong> Не «мы вывели сайт в топ», а конкретные показатели: рост трафика, количество заявок, стоимость лида до и после. Агентства, работающие давно, обычно имеют публичные кейсы с реальными метриками.</li>
+                    <li><strong>Уточняйте, кто будет вести проект.</strong> В крупных агентствах клиента может вести младший специалист под надзором руководителя. Спросите, сколько проектов одновременно ведёт ваш менеджер. В качественных агентствах этот показатель ограничен 3–5 проектами на специалиста.</li>
+                    <li><strong>Проверяйте методы.</strong> Белое SEO в Москве — это необходимость, а не рекомендация. Использование покупных ссылок с бирж или накрутки поведенческих факторов даёт краткосрочный эффект, но почти гарантированно приводит к санкциям. Спрашивайте, какие инструменты линкбилдинга использует подрядчик.</li>
+                    <li><strong>Фиксируйте KPI в договоре.</strong> Если агентство готово нести финансовую ответственность за результат (позиции, трафик, заявки), это хороший сигнал. Модели с оплатой за лид или с гарантией KPI встречаются реже, но они более честны по отношению к клиенту.</li>
+                    <li><strong>Не гонитесь за дешевизной.</strong> SEO за 10 000 ₽ в месяц в Москве — это либо работа студента по шаблону, либо имитация деятельности. Качественное продвижение требует участия SEO-специалиста, копирайтера, аналитика и разработчика.</li>
+                </ul>
+
+                <div class="cta-email">
+                    <h2>Нужна консультация по SEO-продвижению?</h2>
+                    <p>Расскажем, из чего сложатся работы именно для вашего сайта, оценим нишу и дадим рекомендации.</p>
+                    <a href="mailto:info@moskva-seo-prodvizhenie.ru" class="btn">Написать на e-mail</a>
+                </div>
+
+                <h2 id="faq">Часто задаваемые вопросы</h2>
+
+                <div class="faq">
+                    <details>
+                        <summary>Сколько времени нужно, чтобы выйти в топ в Москве?</summary>
+                        <p>Первые результаты появляются через 3–6 месяцев. Выход в топ-10 по конкурентным коммерческим запросам в Москве обычно занимает 6–12 месяцев в зависимости от ниши и состояния сайта.</p>
+                    </details>
+                    <details>
+                        <summary>Можно ли продвигать сайт в Москве без ссылок?</summary>
+                        <p>Технически можно, особенно в низкоконкурентных нишах. Но в большинстве московских коммерческих тематик качественный ссылочный профиль остаётся важным фактором ранжирования. Речь идёт о белых методах: гостевые статьи, PR-упоминания, отраслевые каталоги — а не о покупных ссылках с бирж.</p>
+                    </details>
+                    <details>
+                        <summary>Что делать, если бюджет ограничен?</summary>
+                        <p>Рассмотрите разовую оптимизацию (25 000–150 000 ₽) вместо постоянного продвижения. Она включает технический аудит, исправление критических ошибок и базовую оптимизацию ключевых страниц. Это даст фундамент, на котором можно строить продвижение позже, когда бюджет позволит. Альтернатива — стартовые тарифы агентств от 35 000 ₽ в месяц, ориентированные на локальный бизнес и молодые сайты.</p>
+                    </details>
+                    <details>
+                        <summary>Нужно ли SEO, если уже есть контекстная реклама?</summary>
+                        <p>Да, и вот почему: контекст даёт мгновенный, но платный трафик, который прекращается вместе с бюджетом. SEO создаёт накопительный актив — позиции в органике работают на вас месяцами и годами после завершения активных работ. В Москве, где цена клика в конкурентных нишах высока, комбинация SEO и рекламы позволяет снизить общую стоимость привлечения клиента в долгосрочной перспективе.</p>
+                    </details>
+                </div>
+
             </div>
-        </div>
+        </article>
     </main>
 
     <footer class="footer">
@@ -168,8 +296,8 @@
             <div class="footer-block">
                 <div>SEO продвижение сайтов</div>
                 <div class="footer-links">
-                    <a href="../policy.html">Политика конфиденциальности</a>
-                    <a href="../consent.html">Согласие на обработку данных</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="consent.html">Согласие на обработку данных</a>
                 </div>
                 <div>
                     <span>пн-вс: 9.00 – 21.00</span><br>
@@ -183,7 +311,6 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <script src="../js/posts-loader.js" defer></script>
 </body>
 
 </html>
